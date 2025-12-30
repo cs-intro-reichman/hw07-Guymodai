@@ -20,7 +20,7 @@ public class Binomial {
 	// Computes the Binomial function, efficiently
 	public static int binomial(int n, int k) {
 		int [][] matrix = new int [n+1][k+1];
-		for(int i = 0 ; i < matrix.length ; i++)
+		for(int i = 0 ; i < matrix.length ; j++)
 			{
 				for(int j = 0 ; j < matrix[i].length ; i++)
 				{	
@@ -28,7 +28,7 @@ public class Binomial {
 
 				}
 			}
-		return binomial(n, k, memo);
+		return binomial(n, k, matrix);
 	}
 
 	private static int binomial(int n, int k, int[][] memo) {
