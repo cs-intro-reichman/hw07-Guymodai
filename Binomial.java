@@ -20,9 +20,9 @@ public class Binomial {
 	// Computes the Binomial function, efficiently
 	public static int binomial(int n, int k) {
 		int [][] matrix = new int [n+1][k+1];
-		for(int i = 0 ; i < matrix.length ; j++)
+		for(int i = 0 ; i < matrix.length ; i++)
 			{
-				for(int j = 0 ; j < matrix[i].length ; i++)
+				for(int j = 0 ; j < matrix[i].length ; j++)
 				{	
 					matrix[i][j] = -1;
 
